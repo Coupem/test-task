@@ -1,8 +1,17 @@
 import React from 'react';
-import './App.css';
+import Header from './components/Header';
+import { useStyles } from './styled/appStyles';
+import Navigation from './components/Navigation';
 
-function App() {
-  return <div className="App">Learn React</div>;
-}
-
+const App = () => {
+  const classes = useStyles();
+  return (
+    <div className={classes.mainLayout}>
+      <Header />
+      <div className={classes.navButton}>
+        <Navigation />
+      </div>
+    </div>
+  );
+};
 export default App;
