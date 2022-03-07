@@ -16,6 +16,7 @@ const Navigation = () => {
   const navToGrid = () => {
     history.push('/grid');
   };
+
   return (
     <React.Fragment>
       <ButtonNavigation fullWidth onClick={navToScheduler}>
