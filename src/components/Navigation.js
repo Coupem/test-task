@@ -16,6 +16,11 @@ const Navigation = () => {
   const navToGrid = () => {
     history.push('/grid');
   };
+
+  const navToGraphql = () => {
+    history.push('/graphql');
+  };
+
   return (
     <React.Fragment>
       <ButtonNavigation fullWidth onClick={navToScheduler}>
@@ -26,6 +31,9 @@ const Navigation = () => {
       </ButtonNavigation>
       <ButtonNavigation fullWidth onClick={navToGrid}>
         Grid
+      </ButtonNavigation>
+      <ButtonNavigation fullWidth onClick={navToGraphql}>
+        Graphql
       </ButtonNavigation>
     </React.Fragment>
   );

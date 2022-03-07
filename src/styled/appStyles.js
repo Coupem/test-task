@@ -12,7 +12,6 @@ export const useStyles = makeStyles((theme) => ({
     justifyContent: 'space-around',
   },
   mainContent: {
-    backgroundColor: '#b8b8b8',
     height: '100%',
   },
 }));
